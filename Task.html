@@ -2,24 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Task</title>
+  <title>Tasks</title>
   <link rel="stylesheet" href="TodoApp.css">
 </head>
 <body>
-    <div class="container">
-        <div id="taskBox" class="box">
-            <div class="logo">
-                <img src="images/ChatGPT_Image_Sep_19__2025__04_28_06_PM-removebg-preview.png" alt="logo">
-            </div>
-
-            <h2>Task</h2>
-                <input id="taskInput" placeholder="Enter Task">
-                <button id="addTaskBtn">Add Task</button>
-                <a href="#"><button id="backFromTask" class="logout">Logout</button></a>
-                <a href="TodoApp.html"><button id="back">back</button></a>
-            </div>
+    <div class="header">
+        <div class="TopLeft">
+        <div class="logo">
+            <img src="images/MyLogo.png" alt="logo">
+        </div>
+        </div>
+        <div class="TopRight">
+        <a href="TodoApp.html"><button id="logout" class="logout">Logout</button></a>
         </div>
     </div>
+    <div class="taskContainer">
+
+    <h1>Your Tasks</h1>
+    <input id="taskTitle" placeholder="Enter task title">
+    <input id="taskDescription" placeholder="Enter description">
+    <button id="addTask" class="add">Add Task</button>
+    <div id="taskList"></div>
+    <template id="taskTemplate">
+    <div class="task">
+        <div class="text">Task text here</div>
+        <div class="actions">
+        <input type="checkbox" class="complete">
+        <button class="delete">Delete</button>
+        </div>
+    </div>
+    </template>
+  </div>
   <script src="TodoApp.js"></script>
 </body>
 </html>

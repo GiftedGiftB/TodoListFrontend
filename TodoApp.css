@@ -1,11 +1,176 @@
-
 body {
-  background-image : url('images/geometric-composition-with-writing-accessories.jpg');
+  background-image: url('images/dark-grunge-texture-background.jpg');
   background-size: cover;
+  background-position: center;
   font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+  display: block;
+  padding: 40px;
   min-height: 100vh;
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.box {
+  background: #140806;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #f8f9fa;
+}
+
+h2{
+  color: #f8f9fa;
+}
+
+h3 {
+  color: #f8f9fa;
+  gap: 100px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 500px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+button.back {
+  background: #6c757d;
+}
+button.back:hover {
+  background: #5a6268;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #140806;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.logout {
+  background: #dc3545;
+  color: #fff;
+  padding: 8px 15px;
+}
+
+.add {
+  background: #28a745;
+  color: #fff;
+  padding: 8px 15px;
+  width: auto;
+}
+
+.taskContainer {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #140806;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#taskInput {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.task {
+  background: #e9ecef;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.task .actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.task .actions button {
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task.completed .text {
+  text-decoration: line-through;
+  color: green;
+}
+.task .actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.error-box {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#errorBox {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  background: crimson;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: none;
+  font-size: 14px;
+}
+
+
+
